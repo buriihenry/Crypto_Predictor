@@ -12,8 +12,7 @@ from plotly import graph_objs as go
 
 st.title('Crypto Predictor')
 
-st.markdown("This app enables you to predict on the future value of any cryptocurrency (available on Coinmarketcap.com), for \
-	any number of days into the future! Built with Streamlit.")
+st.markdown("This web app enables you to predict on the future value of any cryptocurrency. Built with Streamlit.")
 
 ### Change sidebar color
 st.markdown(
@@ -93,7 +92,7 @@ def plot_raw_data_log():
 	fig = go.Figure()
 	fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="Close"))
 	fig.update_yaxes(type="log")
-	fig.layout.update(title_text='Time Series data with Rangeslider', xaxis_rangeslider_visible=True)
+	fig.layout.update(title_text='Use the Rangeslider to zoom', xaxis_rangeslider_visible=True)
 	st.plotly_chart(fig)
 	
 ### Plot (log) data
