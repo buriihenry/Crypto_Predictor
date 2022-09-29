@@ -1,7 +1,7 @@
 # Read Me
 
 
-This repository contains a Streamlit web app which predicts the future price of a specified crypto ticker from Coinmarketcap using Facebook Prophet! 
+This repository contains a Streamlit web app which predicts the future price of a specified crypto ticker from Coinmarketcap
 
 Deployed a Crypto predictor model on heroku using Facebook Prophet library
 
